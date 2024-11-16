@@ -2,5 +2,5 @@
 -export([last/1]).
 last([X]) ->
   X;
-last([_ | Tail]) ->
-  last(Tail).
+last([_|T]) ->
+  last(T).
