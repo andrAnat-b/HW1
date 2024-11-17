@@ -11,3 +11,5 @@ encodeDirHelper([X2| T],X, Count, Acc) ->
     1 -> encodeDirHelper(T,X2, 1, [X| Acc]);
     _ -> encodeDirHelper(T,X2, 1, [{Count,X} | Acc])
   end.
+
+  %% Спробуйте преробити

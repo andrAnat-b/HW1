@@ -5,7 +5,7 @@ compress([X|T]) ->
   compress(T, X, []).
 compress([], _, Acc) ->
   lists:reverse(Acc);
-compress([X|T], Prev, Acc) when X == Prev ->
+compress([X|T], Prev, Acc) when X == Prev -> %% зайвий охоронний вира- спробуйте без
   compress(T,Prev,Acc);
 compress([X|T], Prev, Acc) ->
   compress(T,X, [Prev | Acc]).

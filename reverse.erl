@@ -1,7 +1,7 @@
 -module(reverse).
 -export([reverse/1]).
 
-reverse([]) -> [];
+reverse([]) -> []; %% зайва клоза
 reverse(List) ->
   reverse(List, []).
 reverse([X|T], Y) ->

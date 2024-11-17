@@ -3,5 +3,5 @@
 
 list_length([]) -> 0;
 list_length([_]) -> 1;
-list_length([_X|T]) ->
+list_length([_X|T]) -> %% спробуйте преробити на хвостову рекурсію.
   1 + list_length(T).
