@@ -5,3 +5,5 @@ kth_element([X|_T],1) ->
   X;
 kth_element([_X|T],K) ->
   kth_element(T,K - 1).
+
+%% відмінно

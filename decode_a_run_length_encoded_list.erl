@@ -2,4 +2,4 @@
 -export([decode/1]).
 decode([]) -> [];
 decode([{Count, Elem}|T]) ->
-  lists:duplicate(Count, Elem) ++ decode(T).
+  lists:duplicate(Count, Elem) ++ decode(T). %% не можна використовувати модулі написані не вами і перепишіть на хвостову рекурсію

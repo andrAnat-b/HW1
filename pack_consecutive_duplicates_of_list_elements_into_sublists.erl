@@ -8,4 +8,4 @@ pack([], Current, Acc) ->
 pack([X|T], [X| Current], Acc) ->
   pack(T, [X| Current], Acc);
 pack([X|T], Current, Acc) ->
-  pack(T, [X], [lists:reverse(Current) | Acc]).
+  pack(T, [X], [lists:reverse(Current) | Acc]). %% навіщо тут реверс?
